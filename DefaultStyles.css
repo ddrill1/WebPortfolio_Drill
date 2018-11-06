@@ -1,10 +1,11 @@
 a.nav-link {
     color: midnightblue;
 }
-a.nav-link:hover {
-    color: gold;
-    text-decoration: none;
-}
+
+    a.nav-link:hover {
+        color: gold;
+        text-decoration: none;
+    }
 
 body {
     background-color: black;
@@ -17,16 +18,18 @@ body {
     height: 100%;
 }
 
-h1{
+h1 {
     color: black;
 }
 
 h2 {
     font-family: 'Averia Sans Libre', cursive;
 }
-h5{
+
+h5 {
     color: dimgrey;
 }
+
 h6 {
     color: lightcyan;
 }
@@ -36,40 +39,52 @@ label {
     color: grey;
 }
 
-p{
+p {
     color: gainsboro;
-} 
-table {
-    text-align: center;
 }
 
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
 
 canvas {
     display: block;
 }
+
 #snowfall {
     width: 100%;
     height: 100vh;
     background: dodgerblue;
 }
-#snowfall2 {
-    width: 100%;
-    height: 100vh;
-    background: dimgrey;
-}
 
+#space2 {
+    width: 100%;
+    height: 15vh;
+    background: mediumpurple;
+}
+#space {
+    width: 100%;
+    height: 12vh;
+    background: mediumpurple;
+}
 
 
 .carousel-indicators li {
-    background-color: #5f849b
+    background-color: black;
 }
+
 .carousel-indicators .active {
-    background-color: #5f849b
+    background-color: black;
 }
+
 .carousel-item {
-    margin: 20px;
+    /*margin: 20px;*/
     padding-bottom: 20px;
     height: 660px;
+    /*background: no-repeat center center scroll;*/
+    background-size: cover;
 }
 
 .chkmrk {
@@ -85,17 +100,21 @@ canvas {
     text-align: center;
     text-decoration: none;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
+
 .fa-linkedin {
     background: #2c5bdd;
     color: white;
 }
+
 .fa-github {
     background: #000000;
     color: white;
@@ -110,6 +129,7 @@ canvas {
     height: 30px;
     width: 30px;
 }
+
 .info {
     display: none;
 }
@@ -119,15 +139,17 @@ canvas {
     font-family: 'Baloo Bhaijaan', cursive;
     font-size: large;
 }
-.navbar{
+
+.navbar {
     background-color: white;
 }
+
 .navbar-toggler {
     background-color: white;
     border-radius: 7px;
 }
 
-.pos-f-t{
+.pos-f-t {
     background-color: papayawhip;
 }
 
@@ -137,19 +159,26 @@ canvas {
 
 
 
-
 #getInTouch {
     text-align: left;
     padding-top: 30px;
+    background: gainsboro;
 }
+
 #getInTouchHeader {
     border-bottom: dashed 1px silver;
+}
+
+#info5 {
+    opacity: 0.1;
+    color: black;
 }
 
 #itemOneTitle {
     color: navajowhite;
     display: none;
 }
+
 #itemTwoTitle {
     color: navajowhite;
 }
@@ -157,8 +186,10 @@ canvas {
 #mainSlide {
     text-align: center;
     padding-top: 80px;
+    background: black;
 }
-#messageForm{
+
+#messageForm {
     padding: 20px;
     border-right: dashed 1px silver;
 }
@@ -187,7 +218,6 @@ canvas {
 
 #prev {
     pointer-events: none;
-    /*display: none;*/
 }
 
 #profilePic {
@@ -195,8 +225,6 @@ canvas {
     height: 215px;
     border-radius: 105px;
     display: none;
-    /*animation: 1s ease-out 0s 1 slideInFromLeft;
-    background: #333;*/
 }
 
 #rel {
@@ -211,7 +239,11 @@ canvas {
 }
 
 #secondSlide {
-    /*font-family: 'Play', sans-serif;*/
+    background: dodgerblue;
+}
+
+#thirdSlide {
+    background: goldenrod;
 }
 
 #welcome {
@@ -219,6 +251,15 @@ canvas {
     display: none;
 }
 
+#wario {
+    height: 60px;
+    width: 50px;
+}
+
+#warioCelebrate {
+    height: 475px;
+    width: 350px;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -241,8 +282,14 @@ canvas {
         width: 15px;
     }
 
+    .carousel-item {
+        padding-bottom: 20px;
+        height: 660px;
+        background-size: cover;
+    }
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1025px) {
     .fa {
         border-radius: 10px;
         padding: 20px;
@@ -251,15 +298,34 @@ canvas {
         text-align: center;
         text-decoration: none;
     }
+
     .imageButtons {
         height: 25px;
         width: 25px;
     }
+
     .chkmrk {
         height: 15px;
         width: 15px;
     }
+
+    .carousel-item {
+        padding-top: 60px;
+        height: 850px;
+        background-size: cover;
+    }
+    #space2 {
+        width: 100%;
+        height: 19.5vh;
+        background: mediumpurple;
+    }
+    #space {
+        width: 100%;
+        height: 18.25vh;
+        background: mediumpurple;
+    }
 }
+
 @media only screen and (max-width: 725px) {
     .fa {
         border-radius: 20px;
@@ -269,21 +335,43 @@ canvas {
         text-align: center;
         text-decoration: none;
     }
+
     .imageButtons {
         height: 20px;
         width: 20px;
     }
+
     .chkmrk {
         height: 10px;
         width: 10px;
     }
-    #rel{
+
+    #rel {
         font-size: large;
     }
+
     .tableHeaders {
         font-size: medium;
     }
+    .carousel-item {
+        padding-top: 60px;
+        height: 150px;
+        background-size: cover;
+    }
+
+    #space2 {
+        width: 100%;
+        height: 18vh;
+        background: mediumpurple;
+    }
+
+    #space {
+        width: 100%;
+        height: 15vh;
+        background: mediumpurple;
+    }
 }
+
 @media only screen and (max-width: 650px) {
     .fa {
         border-radius: 100px;
@@ -293,32 +381,139 @@ canvas {
         text-align: center;
         text-decoration: none;
     }
+
     .carousel-item {
         height: 675px;
     }
+
     .imageButtons {
         height: 20px;
         width: 20px;
     }
+
     .chkmrk {
         height: 10px;
         width: 10px;
     }
+
     #rel {
         font-size: medium;
     }
+
     .tableHeaders {
         font-size: small;
     }
 }
 
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .fa {
+        border-radius: 100px;
+        height: 20px;
+        padding: 40px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
     }
 
-    100% {
-        transform: translateX(0);
+    .imageButtons {
+        height: 30px;
+        width: 30px;
+    }
+
+    .chkmrk {
+        height: 20px;
+        width: 20px;
+    }
+
+    #rel {
+        font-size: large;
+    }
+
+    .tableHeaders {
+        font-size: medium;
+    }
+
+    .carousel-item {
+        height: 1150px;
+        background-size: cover;
+    }
+    #getInTouchForm {
+        padding: 40px;
+    }
+    #space2 {
+        width: 100%;
+        height: 18vh;
+        background: mediumpurple;
+    }
+    #space {
+        width: 100%;
+        height: 16vh;
+        background: mediumpurple;
+    }
+    #wario {
+        height: 100px;
+        width: 90px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .carousel-item {
+        height: 575px;
+        background-size: cover;
+    }
+
+    .imageButtons {
+        height: 15px;
+        width: 15px;
+    }
+
+    .chkmrk {
+        height: 10px;
+        width: 10px;
+    }
+
+    #getInTouchForm {
+        padding: 40px;
+    }
+
+    #rel {
+        font-size: x-large;
+    }
+
+    #space2 {
+        width: 100%;
+        height: 12vh;
+        background: mediumpurple;
+    }
+
+    #space {
+        width: 100%;
+        height: 12vh;
+        background: mediumpurple;
+    }
+    .tableHeaders {
+        font-size: small;
+    }
+    tr {
+        height: 2px;
+    }
+    #wario {
+        height: 70px;
+        width: 60px;
+    }
+    #warioCelebrate {
+        height: 275px;
+        width: 200px;
+    }
+    #profilePic {
+        width: 125px;
+        height: 95px;
+        border-radius: 80px;
+        display: none;
     }
 }
