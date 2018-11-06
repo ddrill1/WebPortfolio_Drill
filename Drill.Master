@@ -1,0 +1,55 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Drill.master.cs" Inherits="WebPortfolio_DDrill.Drill" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Derek's First Portfolio  |  Hit me up  |  Go Steelers!</title>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.intellisense.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="Scripts/particles.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Bhaijaan|Gloria+Hallelujah|Indie+Flower|Permanent+Marker|Play|Averia+Sans+Libre|Averia+Sans+Libre|" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="DefaultStylez.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="pos-f-t" style="display:none">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-4">
+                        <h2 id="navbarTitle">Mashed Potatoes</h2>
+                        <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Certifications</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <label id="navLabel">Derek Drill</label>
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
