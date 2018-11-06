@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Bhaijaan|Gloria+Hallelujah|Indie+Flower|Permanent+Marker|Play|Averia+Sans+Libre|Averia+Sans+Libre|" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link href="DefaultStylez.css" rel="stylesheet" />
+    <link href="Default.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="pos-f-t" style="display:none">
+            <div class="pos-f-t">
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="p-4">
                         <h2 id="navbarTitle">Mashed Potatoes</h2>
@@ -39,7 +39,7 @@
                         </ul>
                     </div>
                 </div>
-                <nav class="navbar navbar-light">
+                <nav class="navbar navbar-light fixed-top" style="display:none">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
