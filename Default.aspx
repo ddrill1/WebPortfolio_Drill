@@ -137,10 +137,10 @@
                         <label for="email">Email</label>
                         <input id="email" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your email">
                         <br />
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Begin typing message..."></textarea>
+                        <label for="txtMessage">Message</label>
+                        <textarea class="form-control" id="txtMessage" rows="3" placeholder="Begin typing message..."></textarea>
                         <br />
-                        <button type="button" class="btn btn-secondary">Send message!</button>
+                        <button id="send" type="button" class="btn btn-secondary">Send message!</button>
                     </div>
                     <div class="col-3" style="border-bottom:dashed 1px silver">
                          <div class="row">
